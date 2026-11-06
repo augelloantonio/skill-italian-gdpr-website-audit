@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audit privacy, cookie e Garante"
+  short_description: "Audit del sito con score privacy, form e cookie"
+  default_prompt: "Usa $privacy-cookie-audit per analizzare questo sito secondo le fonti del Garante, individuare informative, form e tracciamenti e produrre score per categoria con evidenze e copertura."
