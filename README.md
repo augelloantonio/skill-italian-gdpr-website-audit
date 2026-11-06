@@ -1,6 +1,6 @@
 # skill-italian-gdpr-website-audit
 
-Skill Codex e guida operativa in italiano per analizzare privacy e cookie di un sito web partendo da un URL, con evidenze riproducibili e consultazione delle fonti aggiornate del Garante per la protezione dei dati personali.
+Skill Codex per audit di compliance GDPR, privacy, cookie e normativa italiana/UE applicabile ai trattamenti di un sito. Integra verifiche pubbliche e documenti del titolare, con evidenze e fonti ufficiali aggiornate.
 
 ## Installazione e uso
 
@@ -10,7 +10,7 @@ Il nome del repository è `skill-italian-gdpr-website-audit`; il nome di invocaz
 
 Esempio di richiesta:
 
-> Usa $privacy-cookie-audit su https://example.com e produci un audit con score per categoria, copertura, evidenze e limiti.
+> Usa $privacy-cookie-audit su https://example.com e produci un audit di compliance con matrice normativa, verifiche tecniche e documentali, lacune organizzative e rimedi prioritari.
 
 Per confrontare due verifiche:
 
@@ -27,7 +27,9 @@ I domini `example.com`, `example.org` ed `example.net` sono segnaposto illustrat
 - Servizi esterni, mappe, CAPTCHA e widget.
 - Diritti dell'utente e sicurezza osservabile.
 
-La rubrica comprende 28 controlli in sette categorie, con score 0–100, copertura ed evidenze. I controlli non verificabili restano espliciti; una media alta non nasconde le criticità gravi.
+La matrice normativa comprende 13 ambiti: applicabilità e ruoli, liceità, consenso e casi particolari, trasparenza, cookie, marketing, diritti, conservazione, accountability, fornitori e trasferimenti, sicurezza, DPIA/DPO e norme ulteriori pertinenti. Ogni obbligo deve avere fonte, applicabilità, evidenza e stato.
+
+La rubrica web accessoria comprende 28 controlli in sette categorie, con score 0–100, copertura ed evidenze. I controlli non verificabili restano espliciti; una media alta non nasconde le criticità gravi.
 
 ## Strumenti e limiti
 
@@ -40,6 +42,7 @@ La skill consulta le fonti normative correnti durante ogni audit e distingue obb
 ## File
 
 - [SKILL.md](SKILL.md): istruzioni operative e fonti ufficiali.
+- [Matrice di compliance](references/compliance-matrix.md): requisiti normativi, prove organizzative e stati.
 - [Rubrica](references/audit-rubric.md): controlli, formule e criteri di valutazione.
 - [Verifica browser](references/browser-verification.md): raccolta delle prove, consenso per servizio e gestione delle incertezze.
 - [Metadata Codex](agents/openai.yaml): nome visualizzato e prompt iniziale.

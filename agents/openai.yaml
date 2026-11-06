@@ -1,4 +1,4 @@
 interface:
-  display_name: "Audit privacy, cookie e Garante"
-  short_description: "Audit del sito con score privacy, form e cookie"
-  default_prompt: "Usa $privacy-cookie-audit per analizzare questo sito secondo le fonti del Garante, individuare informative, form e tracciamenti e produrre score per categoria con evidenze e copertura."
+  display_name: "Audit compliance GDPR, privacy e cookie"
+  short_description: "Compliance normativa, tecnica e organizzativa del sito"
+  default_prompt: "Usa $privacy-cookie-audit per un audit di compliance GDPR, privacy, cookie e normativa applicabile a questo sito, con matrice degli obblighi, evidenze tecniche e documentali, lacune organizzative e rimedi prioritari."

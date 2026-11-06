@@ -1,15 +1,23 @@
 ---
 name: privacy-cookie-audit
-description: "Esegue un audit privacy di un sito da URL secondo fonti del Garante: informative, cookie, consenso, form, raccolta dati, servizi esterni e diritti, con score per categoria e monitoraggio delle variazioni. Non è una certificazione legale né un audit SEO."
+description: "Esegue audit di compliance GDPR, privacy, cookie e normativa italiana/UE applicabile ai trattamenti di un sito: verifiche tecniche, documentali e organizzative, matrice degli obblighi, rilievi e rimedi. Usare per valutare conformità e lacune da URL e documenti del titolare; non è una certificazione legale né un audit SEO."
 ---
 
-# Analisi privacy e cookie dei siti
+# Audit di compliance GDPR, privacy e cookie dei siti
 
 Fornisci evidenze riproducibili e correzioni proporzionate. Parti dall'URL; il sorgente e l'accesso server sono facoltativi. Default: contesto Italia/UE, dichiarato come ipotesi se non confermato. Rispondi nella lingua dell'utente.
 
+## Perimetro normativo e organizzativo
+
+Per ogni audit leggi [matrice di compliance](references/compliance-matrix.md). Valuta i trattamenti collegati al sito, non soltanto banner e informative. Identifica territorio, ruolo del gestore, destinatari del servizio, funzioni e categorie di dati; dichiara le ipotesi. Applica GDPR, Codice Privacy e disciplina ePrivacy pertinente, oltre a provvedimenti e regole settoriali effettivamente applicabili. Altri ambiti normativi del sito (es. commercio elettronico, consumatori, accessibilità) richiedono una verifica di applicabilità e un perimetro esplicito: non dichiarare una compliance normativa universale.
+
+L'audit comprende due livelli: verifiche pubbliche tecniche/documentali e verifiche organizzative basate su evidenze del titolare. Avvia subito il primo e chiedi durante il lavoro solo documenti o chiarimenti mirati necessari al secondo. L'assenza di documentazione pubblica non prova l'assenza di un adempimento interno. Se mancano prove sostanziali, consegna un audit preliminare con lacune aperte, non un verdetto di conformità complessiva.
+
+Associa ogni requisito a fonte/articolo, motivo di applicabilità, evidenza, stato e azione correttiva. Distingui requisiti soddisfatti nel perimetro verificato, non conformità documentate, conformità parziale, non verificati, non applicabili e interpretazioni da confermare. Gli score della rubrica web sono indicatori accessori: non sostituiscono la matrice normativa e non diventano percentuali di compliance GDPR.
+
 ## Perimetro ed evidenze
 
-- Registra data, URL effettivi dopo redirect, ambiente, browser, stato iniziale del consenso, localizzazione nota e limiti di accesso. Non presentare un campione come scansione completa.
+- Registra data, URL effettivi dopo redirect, ambiente, browser, stato iniziale del consenso, localizzazione nota e limiti di accesso. Confronta le informative con la pagina corrente: risultati indicizzati o cache possono mostrare versioni superate. In caso di divergenza conserva provenienza e data e fonda i rilievi sul documento live verificato. Non presentare un campione come scansione completa.
 - Visita homepage, pagina contatti e pagine con mappe, video, form, chat o altri widget, oltre a privacy/cookie policy e preferenze. Scegli percorsi rappresentativi, senza acquistare, inviare form o usare account personali.
 - Preferisci un contesto browser isolato, se gli strumenti lo consentono. Non cancellare cookie o preferenze del profilo dell'utente. Se manca isolamento, dichiara la contaminazione da consensi preesistenti; non certificare il comportamento della prima visita.
 - Usa strumenti browser con rete/storage quando disponibili e permessi. La sola lettura HTML o navigazione visiva consente un audit preliminare, non dimostra l'assenza di tracciamenti. Non fingere di vedere header, cookie HttpOnly, iframe cross-origin o storage che lo strumento non espone. Non richiedere accessi aggiuntivi finché puoi avanzare utilmente.
@@ -70,14 +78,19 @@ L'audit deve formulare una conclusione motivata per ciascun servizio effettivame
 Prima di conclusioni normative consulta fonti primarie correnti e cita i passaggi pertinenti:
 - https://www.garanteprivacy.it/faq/cookie (in particolare FAQ 4–6, 9–12 e 15).
 - Linee guida cookie e altri strumenti di tracciamento del 10 giugno 2021, raggiungibili dalle FAQ; controlla eventuali aggiornamenti.
-- GDPR e normativa ePrivacy/Codice Privacy nelle fonti ufficiali, quando pertinenti.
-- Documentazione e informative ufficiali degli specifici fornitori rilevati.
+- [GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj): verifica testo vigente, articoli applicabili e orientamenti EDPB pertinenti.
+- [Codice Privacy](https://www.garanteprivacy.it/codice) e normativa ePrivacy nelle fonti ufficiali: verifica testo vigente e applicabilità, inclusi art. 122 per il terminale e art. 130 per comunicazioni promozionali quando pertinenti.
+- Documentazione e informative ufficiali degli specifici fornitori rilevati, privilegiando gli addendum del prodotto sulla sola policy generale. Distingui eventuali ruoli diversi del fornitore per erogazione e miglioramento del servizio, senza estendere a tutto il prodotto una singola finalità.
 
 Distingui obbligo documentato, interpretazione da confermare e miglioramento facoltativo. Se le fonti non sono accessibili, dichiara che la parte normativa non è stata aggiornata. Un audit tecnico non è una certificazione legale.
 
+### Esempio istituzionale di informativa
+
+L’[informativa dei siti del Garante](https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/36573) è utile per confrontare struttura e chiarezza. Non è un modello universale o una fonte di obblighi aggiuntivi: non trasferire automaticamente basi giuridiche istituzionali, sette giorni di conservazione dei dati di navigazione, fornitori o dichiarazioni sui cookie ad altri titolari.
+
 ## Risultato e monitoraggio
 
-Apri con esito e limite principale. Per i rilievi usa: priorità, pagina/stato, evidenza, impatto, correzione suggerita e verifica di chiusura. Classifica ogni conclusione come osservata, inferita o non verificata. Calcola gli score tecnici per categoria secondo references/audit-rubric.md, con copertura, non verificati e non applicabili espliciti. Non presentarli come percentuale di conformità legale. Non dichiarare un sito conforme solo perché non rilevi cookie.
+Apri con esito di compliance circoscritto e limite principale. Consegna la matrice normativa, i documenti mancanti e un piano di rimedio con priorità, ruolo responsabile suggerito e criterio di verifica; non inventare scadenze legali. Separa evidenza tecnica, dichiarazione del titolare e valutazione normativa.  Per i rilievi usa: priorità, pagina/stato, evidenza, impatto, correzione suggerita e verifica di chiusura. Classifica ogni conclusione come osservata, inferita o non verificata. Calcola gli score tecnici per categoria secondo references/audit-rubric.md, con copertura, non verificati e non applicabili espliciti. Non presentarli come percentuale di conformità legale. Non dichiarare un sito conforme solo perché non rilevi cookie.
 
 Se richiesto un report persistente, salva una sintesi Markdown e una baseline JSON con data, scope, scenari, domini, metadati cookie/storage, hash delle policy e rilievi; nessun valore identificativo. Confronta baseline omogenee, separando cambiamenti reali da differenze di browser, scope o osservabilità. Alla prima esecuzione dichiara che manca una baseline.
 
