@@ -43,6 +43,14 @@ Controlla se i campi sono proporzionati alla finalità dichiarata, se la policy 
 
 Confronta quanto dichiarato con quanto osservato: identità del titolare, contatti, finalità e basi giuridiche per ciascun trattamento, categorie di destinatari, conservazione o criteri, trasferimenti/garanzie quando applicabili, diritti e reclamo al Garante, eventuale DPO quando richiesto. Non inventare obblighi come la nomina universale del DPO, un termine fisso per tutti i log o il consenso universale per ogni dato personale. Le dichiarazioni documentali sono osservabili; la loro attuazione interna richiede prove diverse.
 
+## Normativa specifica dei moduli e dei flussi
+
+Per ogni modulo o raccolta dati descrivi cosa ottiene l’utente, quali dati vengono raccolti, chi li riceve e cosa succede dopo. Distingui contatto/preventivo, prenotazione, ordine, pagamento, registrazione e marketing: una prenotazione non va classificata automaticamente come acquisto concluso. Verifica l’intero flusso pertinente nei limiti del mandato, non soltanto la checkbox privacy.
+
+Oltre agli obblighi privacy, fai lo screening delle disposizioni pertinenti alla funzione concreta: per esempio disciplina di servizi online, consumatori, contratti a distanza, pagamenti, accessibilità o regole settoriali quando applicabili. Consulta fonti ufficiali aggiornate e motiva per ciascuna inclusione o esclusione; non estendere l’audit all’intera attività del gestore. Un sito di prenotazione per una pizzeria è un esempio di funzione da classificare, non un motivo per applicare indiscriminatamente ogni norma del settore alimentare. Se emergono campi potenzialmente delicati, come informazioni sanitarie, valuta finalità, necessità e disciplina specifica senza dedurre la categoria dal solo titolo del sito.
+
+Quando una funzione, destinazione dei dati, finalità o condizione giuridicamente rilevante rimane dubbia dopo l’ispezione disponibile, chiedi sempre un chiarimento mirato all’utente durante l’audit. Spiega quale conclusione dipende dalla risposta; non inventare il funzionamento e non limitarti a un generico «da verificare» nella consegna. Riusa le risposte già fornite. Continua il lavoro indipendente; se manca una risposta indispensabile, lascia aperto il punto e non formulare prescrizioni dipendenti. Non reiterare una domanda già dichiarata non risolvibile dall’utente: registra il limite e la prova necessaria.
+
 ## Verifica comportamentale
 
 Con sessioni indipendenti, quando possibili, verifica:
@@ -91,6 +99,40 @@ L’[informativa dei siti del Garante](https://www.garanteprivacy.it/home/docweb
 ## Risultato e monitoraggio
 
 Apri con esito di compliance circoscritto e limite principale. Consegna la matrice normativa, i documenti mancanti e un piano di rimedio con priorità, ruolo responsabile suggerito e criterio di verifica; non inventare scadenze legali. Separa evidenza tecnica, dichiarazione del titolare e valutazione normativa.  Per i rilievi usa: priorità, pagina/stato, evidenza, impatto, correzione suggerita e verifica di chiusura. Classifica ogni conclusione come osservata, inferita o non verificata. Calcola gli score tecnici per categoria secondo references/audit-rubric.md, con copertura, non verificati e non applicabili espliciti. Non presentarli come percentuale di conformità legale. Non dichiarare un sito conforme solo perché non rilevi cookie.
+
+### Sintesi leggibile e azioni con priorità
+
+Apri ogni report con una sintesi comprensibile anche a chi non è tecnico: «Cosa va bene», «Cosa devi correggere», «Cosa dobbiamo verificare», «Cosa ti consiglio». Spiega ogni problema attraverso conseguenza pratica e prossima azione; sposta dettagli tecnici, identificatori dei controlli e formule negli approfondimenti. Espandi le sigle alla prima occorrenza. Mantieni una lista operativa ordinata per priorità dopo i rilievi e prima dell’appendice finale dei punteggi. Collega ogni azione al rilievo o controllo pertinente; evita raccomandazioni generiche non sostenute dal campione.
+
+Usa queste priorità operative, distinte dagli stati di conformità e dalle scadenze di legge:
+- **P0 — intervento immediato:** esposizione attiva di dati/credenziali o altro danno grave in corso dimostrato. Indica contenimento e verifica successiva; non assegnare P0 a un semplice dubbio.
+- **P1 — alta:** difetto documentato con impatto rilevante o verifica necessaria per decidere su un trattamento già attivo potenzialmente rilevante. Nel secondo caso scrivi esplicitamente «verifica prioritaria» e spiega cosa può cambiare con l'esito.
+- **P2 — media:** correzioni documentali, coerenza dei flussi e processi da completare, con impatto più circoscritto nel campione.
+- **P3 — miglioramento:** interventi facoltativi di chiarezza o manutenzione, senza presentarli come obblighi.
+
+Per ogni voce riporta: **priorità | natura (obbligo accertato/obbligo condizionato/verifica da completare/consiglio facoltativo) | azione concreta | motivo ed evidenza | ruolo responsabile suggerito | dipendenze o informazioni necessarie | criterio di chiusura**. Se serve distinguere l'ordine entro la stessa priorità, considera impatto, diffusione e dipendenze; le verifiche che sbloccano altre decisioni precedono le modifiche dipendenti. Non prescrivere consenso, banner, cancellazioni o modifiche dei trattamenti prima di averne motivato la necessità. Se suggerisci tempi operativi, etichettali come proposte; cita la fonte per eventuali termini legali realmente applicabili. Non inventare responsabili nominativi o promettere esecuzioni non autorizzate.
+
+Per «obbligo accertato» cita requisito applicabile e difetto dimostrato. Per «obbligo condizionato» indica la condizione che lo fa scattare e la prova mancante. Priorità e natura sono indipendenti: un dubbio urgente non diventa una violazione.
+
+Se non emergono difetti, indica comunque le verifiche residue oppure dichiara che non risultano azioni correttive nel perimetro esaminato. Non aggiungere problemi fittizi per riempire la lista.
+
+### Tabella normativa a semaforo
+
+Dopo la sintesi presenta una tabella leggibile: **norma/articolo e requisito concreto | stato testuale e colore | motivo/prova | obbligo o consiglio e prossima azione**. Suddividi le norme ampie per requisito: non dichiarare verde l’intero GDPR perché è presente una privacy policy.
+
+- **🟢 Verde — rispettato nel perimetro verificato:** prova sufficiente per il requisito specifico. Un miglioramento facoltativo va in nota e non cambia il verde.
+- **🟡 Giallo — verifica/adeguatezza da completare:** dubbio concreto su prove, applicabilità o funzionamento che impedisce una conclusione. Indica domanda, informazione mancante e conseguenza possibile; non equivale a violazione accertata.
+- **🔴 Rosso — obbligo non rispettato:** requisito applicabile e inosservanza sostenuti da prove, anche se il rimedio è piccolo. Distingui gravità e priorità dal colore.
+
+Per obblighi non applicabili scrivi **NA — non applicabile** con motivo, senza verde premiale. Non basare il colore sul numero di parole mancanti o sulla previsione di una sanzione: verifica significato, completezza e accessibilità richiesti dalla norma. Una formulazione diversa ma equivalente può essere verde; un’omissione obbligatoria non diventa verde perché sembra lieve. Non promettere «non punibile». Mantieni colori, stati normativi e motivazioni coerenti; lo score parziale non deve nascondere un rosso.
+
+### Istruzioni finali di correzione, utilizzabili da uno sviluppatore o da un’IA
+
+Dopo il piano prioritario e prima dell’appendice dei punteggi aggiungi istruzioni operative per ciascuna correzione: **ID del rilievo e natura | pagina/componente o file se effettivamente noto | risultato atteso | intervento concreto | informazioni necessarie | verifica di accettazione**. Specifica anche quando attendere un chiarimento anziché inventare una scelta giuridica. Non inventare percorsi del repository da un URL né documenti, tempi di conservazione, ruoli, accordi o garanzie dei fornitori. Se proponi testi, distingui bozza suggerita e contenuti da confermare. Per modifiche al modulo considera interfaccia e validazione server, quando il sorgente o un ambiente di test autorizzato sono disponibili. Il report fornisce istruzioni, non autorizza automaticamente modifica, invio di dati o pubblicazione.
+
+### Due score in fondo al report
+
+Mostra tutti gli score web calcolabili della rubrica, anche con bassa copertura, etichettandoli come provvisori e indicando conteggio e copertura accanto; se nessun controllo è concluso indica «non attribuibile». Affianca uno **score di conformità osservabile**, secondo references/audit-rubric.md. Colloca entrambi, con formule e copertura, nell’ultima appendice, dopo le azioni. Lo score di conformità misura soltanto i requisiti normativi applicabili effettivamente valutati nel perimetro: non presentarlo come percentuale dell’intera conformità GDPR del titolare. Specifica in linguaggio semplice se le prove sono prevalentemente documentali. Non ereditare automaticamente i voti tecnici come valutazioni giuridiche.
 
 Se richiesto un report persistente, salva una sintesi Markdown e una baseline JSON con data, scope, scenari, domini, metadati cookie/storage, hash delle policy e rilievi; nessun valore identificativo. Confronta baseline omogenee, separando cambiamenti reali da differenze di browser, scope o osservabilità. Alla prima esecuzione dichiara che manca una baseline.
 

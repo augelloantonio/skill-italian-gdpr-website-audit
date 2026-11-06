@@ -16,7 +16,7 @@ Leggi questa matrice per ogni audit. I riferimenti sono punti di ingresso: consu
 | N10 | Fornitori e trasferimenti, artt. 28, 44–49 | DPA/accordi, sub-responsabili, ubicazione e accessi extra SEE, meccanismo di trasferimento e verifiche richieste per il caso concreto. Un server UE o una policy del fornitore non provano da soli tutti gli adempimenti. |
 | N11 | Sicurezza e incidenti, artt. 32–34 | HTTPS e sicurezza osservabile; misure organizzative, accessi, backup e gestione violazioni su prove redatte. Valuta notifica/comunicazione secondo le condizioni normative, non come obblighi automatici per ogni incidente. Nessun penetration test implicito. |
 | N12 | DPIA e DPO, artt. 35–39 | Valutazione motivata dell'applicabilità, rischi e liste del Garante; evidenze di valutazione/designazione quando richieste. Non sono obblighi universali. |
-| N13 | Norme ulteriori pertinenti | Identifica trattamenti regolati da disposizioni settoriali; consulta fonti ufficiali e spiega il collegamento. Per obblighi non privacy del sito, esplicita cosa è incluso, escluso o da approfondire. |
+| N13 | Norme ulteriori pertinenti | Identifica trattamenti regolati da disposizioni settoriali; consulta fonti ufficiali e spiega il collegamento. Per ogni modulo/flusso fai anche lo screening degli obblighi non privacy pertinenti alla funzione concreta: prenotazione, ordine, pagamento o semplice contatto. Motiva inclusioni/esclusioni e chiedi chiarimenti sui dubbi rilevanti prima delle conclusioni. |
 
 ## Registro dei risultati
 
@@ -31,3 +31,5 @@ Chiedi soltanto evidenze pertinenti e redatte: mappa fornitori, finalità e basi
 Consegna esito circoscritto, matrice N1–N13, rilievi prioritari e fonti, tabella consenso per servizio, score e copertura della rubrica web, domande residue e piano di rimedio. Non fondere gli score tecnici con un voto normativo. Una verifica solo pubblica resta preliminare per gli aspetti organizzativi.
 
 Durante una prova della skill, conserva il rapporto del sito separatamente dai file pubblicabili. Registra ciò che il flusso ha effettivamente verificato e le lacune della skill, senza inserire domini, clienti o evidenze del test negli esempi pubblici. Non pubblicare aggiornamenti della skill quando l'utente ha richiesto prima la prova.
+
+Nella consegna affianca alla matrice la tabella a semaforo e le istruzioni operative definite in SKILL.md. Per gli obblighi ulteriori individuati dal flusso aggiungi righe specifiche con fonti e prove; N13 non può essere liquidato con un’esclusione generale senza screening.

@@ -31,6 +31,16 @@ La matrice normativa comprende 13 ambiti: applicabilità e ruoli, liceità, cons
 
 La rubrica web accessoria comprende 28 controlli in sette categorie, con score 0–100, copertura ed evidenze. I controlli non verificabili restano espliciti; una media alta non nasconde le criticità gravi.
 
+## Report e istruzioni di correzione
+
+Il report apre con una sintesi comprensibile anche a chi non è tecnico e una tabella normativa a semaforo: verde per requisiti rispettati nel perimetro verificato, giallo per punti da chiarire, rosso per inosservanze documentate. Un consiglio facoltativo non penalizza un requisito già soddisfatto.
+
+Seguono azioni ordinate per priorità, distinguendo obblighi accertati, obblighi condizionati, verifiche residue e consigli. Le istruzioni finali indicano dove intervenire, risultato atteso, informazioni necessarie e verifica di chiusura, anche per affidare il lavoro a uno sviluppatore o a un’IA.
+
+In fondo sono riportati due tipi di score: conformità osservabile sui requisiti normativi valutati e score web delle sette categorie. Entrambi espongono la copertura. Gli score web calcolabili restano visibili anche con bassa copertura, con etichetta provvisoria; nessun voto attesta la conformità complessiva del titolare.
+
+I controlli sono adattati alla funzione reale di ciascun flusso: contatto, prenotazione, ordine e pagamento non sono equivalenti. La skill consulta le norme pertinenti e chiede chiarimenti durante l’audit sui dubbi che cambiano la valutazione, riutilizzando le risposte e le prove già disponibili.
+
 ## Strumenti e limiti
 
 Servono strumenti per consultare le fonti ufficiali e navigare il sito. Le verifiche comportamentali richiedono accesso a rete e storage del browser, quando disponibile e autorizzato. La skill non include un crawler o uno scanner autonomo.

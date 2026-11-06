@@ -52,8 +52,21 @@ La gravità è distinta dal voto: evidenzia in apertura tracciamenti non autoriz
 
 Consegna:
 1. Dominio, data, pagine e scenari esaminati; limite principale.
-2. Tabella categoria / score / copertura / controlli U e NA / principale rilievo.
-3. Rilievi ordinati per impatto, con prove, fonte normativa pertinente, azione e verifica di chiusura.
-4. Dichiarazioni o configurazioni da verificare lato server/titolare: conservazione reale, gestione richieste privacy, contratti, accessi, cancellazione, eventuali consensi registrati. Non dedurre tali aspetti dallo score frontend.
+2. Tabella normativa a semaforo e rilievi ordinati per impatto, con prove, fonte pertinente, azione e verifica di chiusura.
+3. Piano di azioni con priorità e natura, seguito da istruzioni operative di correzione.
+4. Appendice finale: score di conformità osservabile e score web per categoria, copertura, controlli U e NA e principali limiti.
+5. Nel corpo del report, dichiarazioni o configurazioni da verificare lato server/titolare: conservazione reale, gestione richieste privacy, contratti, accessi, cancellazione, eventuali consensi registrati. Non dedurre tali aspetti dallo score frontend.
 
 Per un report persistente salva anche rubric_version=1 e gli stati dei singoli controlli; non memorizzare soltanto i voti. Confronta punteggi soltanto a rubrica e campione comparabili, segnalando nuove pagine o cambiamenti nell'osservabilità.
+
+Prima dell’appendice finale dei punteggi presenta la lista di azioni con priorità definita in SKILL.md: collega ogni voce a un rilievo, distingui obbligo accertato/obbligo condizionato/verifica da completare/consiglio facoltativo e indica responsabile suggerito, dipendenze e criterio di chiusura. Le priorità operative non sono voti di conformità o scadenze legali.
+
+## Score di conformità osservabile — convenzione v1
+
+Affianca agli score web uno score normativo distinto. Dalla matrice ricava un elenco di requisiti specifici non sovrapposti: lo stesso difetto non va contato più volte attraverso articoli o categorie diverse. Definisci il perimetro prima del calcolo e riporta anche i requisiti ignoti o di applicabilità incerta, senza selezionare solo quelli favorevoli. Per ogni requisito indica fonte, applicabilità, prova e stato: 2 soddisfatto nel perimetro verificato; 1 adempimento parziale con lacuna dimostrata; 0 inosservanza dimostrata; U non verificato o applicabilità aperta; NA non applicabile motivato. Dividi i requisiti compositi quando consentito dalle prove.
+
+Formula: `100 * somma(stati numerici) / (2 * numero di requisiti con stato numerico)`. Copertura: `100 * requisiti con stato numerico / requisiti diversi da NA`. U non vale zero né superato. Se nessun requisito ha esito numerico, score non attribuibile. Mantieni ogni calcolo ricostruibile dal registro.
+
+Intitola il risultato «Score di conformità osservabile: X/100 sui requisiti valutati», con copertura in conteggio e percentuale accanto. Con copertura inferiore al 75% indica «provvisorio — prove incomplete»; la soglia è una convenzione, non normativa. Non chiamarlo «sito conforme X%», non usarlo come certificazione, non confrontarlo con score di diverso perimetro o versione. Descrivi quali tipi di adempimenti il numero rappresenta e quali restano aperti; un voto documentale non verifica attuazione e liceità dei trattamenti. Evidenzia comunque i difetti gravi, che il voto medio non compensa.
+
+In fondo al report presenta prima questo score con il relativo registro, poi gli score web preesistenti con copertura e limiti. Le azioni precedono entrambi.
